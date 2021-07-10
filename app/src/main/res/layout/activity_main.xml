@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#C4C4C4" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/topView"
+        android:layout_alignBottom="@+id/topView"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/arrow"
+        android:layout_marginVertical="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/arrow"
+        android:fontFamily="@font/roboto"
+        android:text="Pending Activation"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="2 September , 2020"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_centerHorizontal="true"
+        android:text="Status : Expired"
+        android:textColor="#FE122E" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Nexus 5 Insurance"
+        android:textColor="#000000"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deviceName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#18F148"
+        android:fontFamily="@font/roboto"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="20dp"
+        android:text="Activate Insurance now"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/box_1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_above="@id/box_2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="#C4C4C4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/box_2"
+        android:fontFamily="@font/roboto"
+        android:text="Coverage"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/box_2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="#C4C4C4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/box_1"
+        android:layout_alignTop="@id/box_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="Device : "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/box_1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="LGE Nexus 5"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/box_1"
+        android:layout_alignTop="@id/box_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto"
+        android:text="Insurance term :  "
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/box_1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto"
+        android:text="12 months"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/box_2"
+        android:layout_alignTop="@id/box_2"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/roboto"
+        android:text="All drops and breakage including cracked screen"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
